@@ -7,6 +7,7 @@
 exports.WS_MongoDB = function(ip,port){
     //ip = ip||"localhost";
     //port = port||27017;
+    console.log('starting mongodb');
     var mongodb = require("mongodb");
     ip="localhost";
     port = 27017;
@@ -20,4 +21,7 @@ exports.WS_MongoDB = function(ip,port){
             console.log("we are connected!");
         }
     });
+
+    console.log('started mongodb');
+    return db;
 }

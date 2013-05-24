@@ -9,6 +9,9 @@ var express = require('express')
   , http = require('http')
   , path = require('path');
 
+//wcc 2013-5-24 13:30
+var article = require("./routes/WS_ArticleAction.js");
+
 var app = express();
 
 // all environments
@@ -32,6 +35,9 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/users', user.list);
+app.get('/article/get', article.get);
+app.post('/article/post', article.post);
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
