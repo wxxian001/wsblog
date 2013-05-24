@@ -1,7 +1,79 @@
+body,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+textarea,
+p,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #fff;
+  font: 14px/1.2 simsun, Arial, Helvetica, sans-serif;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 a {
-  color: #00B7FF;
+  text-decoration: none;
+}
+img {
+  border: 0;
+}
+em {
+  font-style: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+.fl {
+  float: left;
+  display: inline;
+}
+.fr {
+  float: right;
+  display: inline;
+}
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+  clear: both;
+}
+.wrapper-head,
+.wrap-container,
+.wrap-foot {
+  width: 100%;
 }
