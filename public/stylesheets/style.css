@@ -1,79 +1,23 @@
-body,
-dl,
-dt,
-dd,
-ul,
-ol,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-form,
-fieldset,
-input,
-textarea,
-p,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-body {
-  background: #fff;
-  font: 14px/1.2 simsun, Arial, Helvetica, sans-serif;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-a {
-  text-decoration: none;
-}
-img {
-  border: 0;
-}
-em {
-  font-style: normal;
-}
-ol,
-ul {
-  list-style: none;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-.fl {
-  float: left;
-  display: inline;
-}
-.fr {
-  float: right;
-  display: inline;
-}
-.clearfix:before,
-.clearfix:after {
-  content: "";
-  display: table;
-}
-.clearfix:after {
-  clear: both;
-}
-.clearfix {
-  zoom: 1;
-  clear: both;
-}
-.wrapper-head,
-.wrap-container,
-.wrap-foot {
-  width: 100%;
-}
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,th,td{margin:0;padding:0;}
+body{background:url(../images/body_bg.png) repeat;font:14px/1.5 simsun,Arial,Helvetica,sans-serif;}
+table{border-collapse:collapse;border-spacing:0;}
+a{text-decoration:none;}
+img{border:0;}
+em{font-style:normal;}
+ol,ul{list-style:none;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;clear:both;}
+.wrap-head,.wrap-container,.wrap-foot{width:100%;}
+.head,.container,.foot{width:1100px;margin:0 auto;}
+.wrap-head{background:url(../images/head_bg.png) repeat-x;height:90px;}
+.title{width:50px;height:90px;line-height:90px;color:#fff;float:left;}
+.nav{float:left;margin:40px 0 0 50px;}
+.nav a{float:left;margin-right:20px;color:#fff;font-family:'Microsoft YaHei';font-size:16px;}
+.nav a:hover{color:#ccc;}
+.search{background:url(../images/search.png) no-repeat;width:151px;height:21px;float:right;margin:40px 50px 0 0;}
+.search-input{background:none;width:120px;height:20px;line-height:20px;border:none;margin-left:8px;}
+.col-main{width:100%;float:left;}

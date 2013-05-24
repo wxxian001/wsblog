@@ -7,10 +7,26 @@
   <body>
     <div>
       <div class="wrap-head">
-        <div class="head"></div>
+        <div class="head clearfix">
+          <h1 class="title"><%= title %></h1>
+          <nav class="nav">
+            <% for(var i=0; i<navlinks.length; i++) { %>
+              <a href="###">
+                <%= navlinks[i] %>
+              </a>
+            <% } %>
+          </nav>
+          <div class="search">
+            <input type="text" class="search-input" />
+            <a href="###"></a>
+          </div>
+        </div>
       </div>
       <div class="wrap-container">
-        <div class="container"></div>
+        <div class="container">
+          <div class="col-main"></div>
+          <aside class="col-aside"></aside>
+        </div>
       </div>
       <div class="wrap-foot">
         <div class="foot"></div>
