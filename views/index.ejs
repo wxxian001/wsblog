@@ -24,8 +24,57 @@
       </div>
       <div class="wrap-container">
         <div class="container">
-          <div class="col-main"></div>
-          <aside class="col-aside"></aside>
+          <div class="col-main">
+            <div class="main-inner">
+              <% for(var i=0; i<articleviews.length; i++) {%>
+              <article class="article-box">
+                <h2 class="articlehead">
+                  <a href="###"><%= articleviews[i].articlehead %></a>
+                </h2>
+                <section class="articlecontent"><%= articleviews[i].articlecontent %></section>
+                <p>
+                    <a class="articletag" href="###"><%= articleviews[i].articletag %></a>
+                    <span class="articlespan"><%= articleviews[i].articleclicknum %></span>
+                    <span class="articlespan"><%= articleviews[i].articledate %></span>
+                    <span class="articlespan"><%= articleviews[i].articleauthor %></span>
+                </p>
+              </article>
+              <% } %>
+            </div>
+          </div>
+          <aside class="col-aside">
+            <section class="aside-block aside-block-first">
+              <div class="aside-title clearfix">
+                <h2 class="aside-title-name"><%= asidename[0] %></h2>
+                <a class="aside-more" href="###"><%= more %></a>
+              </div>
+              <div>
+               <% for(var i=0; i<taglist.length; i++) { %>
+                 <a class="<%= taglist[i].classname %>" href="###">
+                   <%= taglist[i]['content'] %>
+                 </a>
+               <% } %>
+              </div>
+            </section>
+            <section class="aside-block">
+              <div class="aside-title clearfix">
+                <h2 class="aside-title-name"><%= asidename[1] %></h2>
+                <a class="aside-more" href="###"><%= more %></a>
+              </div>
+              <ul>
+               <% for(var i=0; i<hotarticlelist.length; i++) { %>
+                 <li>
+                   <a class="article-title" href="###">
+                     <%= hotarticlelist[i]['articletitle'] %>
+                   </a>
+                   <span class="article-num">
+                     <%= hotarticlelist[i]['articlenum'] %>
+                   </span>
+                 </li>
+               <% } %>
+              </ul>
+            </section>
+          </aside>
         </div>
       </div>
       <div class="wrap-foot">
