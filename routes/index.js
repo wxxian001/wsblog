@@ -7,7 +7,7 @@ exports.index = function(req, res){
   res.render('index', {
       'title': 'WSBLOG',
       'navlinks':['首页','文章','资源','书籍','关于我们'],
-      'asidename':['博客标签','最新博文'],
+      'asidename':['博客标签','最热博文','最新博文'],
       'more':'更多',
       'taglist':[
           {content:'CSS3',classname:'tag1'},
@@ -25,6 +25,13 @@ exports.index = function(req, res){
           {articletitle:'前端开发常用API-chm版',articlenum:'(25993)'},
           {articletitle:'Metro用户界面实现与资源',articlenum:'(10)'},
           {articletitle:'Flexbox制作CSS布局易如反掌',articlenum:'(680)'}
+      ],
+      'newarticlelist':[
+          {articletitle:'CSS3的文字阴影—text-shadow',articlenum:'(3751)'},
+          {articletitle:'Booting to the Web Wiki',articlenum:'(25993)'},
+          {articletitle:'Metro用户界面实现与资源',articlenum:'(10)'},
+          {articletitle:'html ie6 兼容性 hack',articlenum:'(680)'},
+          {articletitle:'触发hayout的几种常见方法介绍',articlenum:'(5971)'}
       ],
       articleviews:[
           {
