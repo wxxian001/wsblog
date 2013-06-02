@@ -6,6 +6,7 @@
 var express = require('express')
   , routes = require('./routes')
   , user = require('./routes/user')
+  , detial = require('./routes/detail')
   , http = require('http')
   , path = require('path');
 
@@ -36,6 +37,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
+app.get('/detial', detial.get);
 app.get('/users', user.list);
 app.get('/article/get', article.get);
 app.post('/article/post', article.post);

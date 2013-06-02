@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div>
+      <div class="wrap-head">
+        <div class="head clearfix">
+          <h1 class="title"><%= title %></h1>
+          <nav class="nav">
+            <% for(var i=0; i<navlinks.lengthd; i++) { %>
+              <a href="###">
+                <%= navlinks[i] %>
+              </a>
+            <% } %>
+          </nav>
+          <div class="search">
+            <input type="text" class="search-input" />
+            <a href="###"></a>
+          </div>
+        </div>
+      </div>
+      <div class="wrap-container">
+        <div class="container">
+          <div class="col-main">
+            <div class="main-inner">
+              <% for(var i=0; i<articleviews.length; i++) {%>
+              <article class="article-box">
+                <h2 class="articlehead">
+                  <a href="###"><%= articleviews[i].articlehead %></a>
+                </h2>
+                <section class="articlecontent"><%= articleviews[i].articlecontent %></section>
+                <p>
+                    <a class="articletag" href="###"><%= articleviews[i].articletag %></a>
+                    <span class="articlespan"><%= articleviews[i].articleclicknum %></span>
+                    <span class="articlespan"><%= articleviews[i].articledate %></span>
+                    <span class="articlespan"><%= articleviews[i].articleauthor %></span>
+                </p>
+              </article>
+              <% } %>
+            </div>
+          </div>
+          <aside class="col-aside">
+            <section class="aside-block aside-block-first">
+              <div class="aside-title clearfix">
+                <h2 class="aside-title-name"><%= asidename[0] %></h2>
+                <a class="aside-more" href="###"><%= more %></a>
+              </div>
+              <div>
+               <% for(var i=0; i<taglist.length; i++) { %>
+                 <a class="<%= taglist[i].classname %>" href="###">
+                   <%= taglist[i]['content'] %>
+                 </a>
+               <% } %>
+              </div>
+            </section>
+            <section class="aside-block">
+              <div class="aside-title clearfix">
+                <h2 class="aside-title-name"><%= asidename[1] %></h2>
+                <a class="aside-more" href="###"><%= more %></a>
+              </div>
+              <ul>
+               <% for(var i=0; i<hotarticlelist.length; i++) { %>
+                 <li>
+                   <a class="article-title" href="###">
+                     <%= hotarticlelist[i]['articletitle'] %>
+                   </a>
+                   <span class="article-num">
+                     <%= hotarticlelist[i]['articlenum'] %>
+                   </span>
+                 </li>
+               <% } %>
+              </ul>
+            </section>
+            <section class="aside-block">
+              <div class="aside-title clearfix">
+                <h2 class="aside-title-name"><%= asidename[2] %></h2>
+                <a class="aside-more" href="###"><%= more %></a>
+              </div>
+              <ul>
+               <% for(var i=0; i<newarticlelist.length; i++) { %>
+                 <li>
+                   <a class="article-title" href="###">
+                     <%= newarticlelist[i]['articletitle'] %>
+                   </a>
+                   <span class="article-num">
+                     <%= newarticlelist[i]['articlenum'] %>
+                   </span>
+                 </li>
+               <% } %>
+              </ul>
+            </section>
+          </aside>
+        </div>
+      </div>
+      <div class="wrap-foot">
+        <div class="foot"></div>
+      </div>
+    </div>
+  </body>
+</html>
