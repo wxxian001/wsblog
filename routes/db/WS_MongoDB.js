@@ -19,6 +19,10 @@ exports.WS_MongoDB = function(ip,port){
         }
         if(!err){
             console.log("we are connected!");
+            //改变WS_MongoDB的函数指向，类似单例工厂
+            exports.WS_MongoDB = function(){
+                return db;
+            }
         }
     });
 
