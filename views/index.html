@@ -29,7 +29,7 @@
               <% for(var i=0; i<articleviews.length; i++) {%>
               <article class="article-box">
                 <h2 class="articlehead">
-                  <a href="###"><%= articleviews[i].articlehead %></a>
+                  <a id="article<%= i %>" href="detail.html" onclick="return false;"><%= articleviews[i].articlehead %></a>
                 </h2>
                 <section class="articlecontent"><%= articleviews[i].articlecontent %></section>
                 <p>
@@ -99,5 +99,7 @@
         <div class="foot"></div>
       </div>
     </div>
+    <script src="/javascripts/jquery-2.0.1.min.js"></script>
+    <script src="/javascripts/WS_history.js"></script>
   </body>
 </html>

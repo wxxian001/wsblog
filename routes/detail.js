@@ -21,3 +21,11 @@ exports.get = function(req, res){
         }
     });
 };
+
+exports.getAjax = function(req,res){
+    var jsonObject={
+        articleId:"articleId1",
+        articileConent:"sjdflkjasldkjflkasjdf"
+    }
+    res.send(jsonObject);
+};
