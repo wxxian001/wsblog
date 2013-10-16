@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
@@ -8,7 +9,7 @@
     <div>
       <div class="wrap-head">
         <div class="head clearfix">
-          <h1 class="title"><%= title %></h1>
+          <h1 class="title"></h1>
           <nav class="nav">
             <% for(var i=0; i<navlinks.length; i++) { %>
               <a href="###">
@@ -18,7 +19,7 @@
           </nav>
           <div class="search">
             <input type="text" class="search-input" />
-            <a href="###"></a>
+            <a class="search-btn" href="###"></a>
           </div>
         </div>
       </div>
@@ -29,7 +30,7 @@
               <% for(var i=0; i<articleviews.length; i++) {%>
               <article class="article-box">
                 <h2 class="articlehead">
-                  <a href="###"><%= articleviews[i].articlehead %></a>
+                  <a id="article<%= i %>" href="detail.ejs" onclick="return false;"><%= articleviews[i].articlehead %></a>
                 </h2>
                 <section class="articlecontent"><%= articleviews[i].articlecontent %></section>
                 <p>
@@ -99,5 +100,7 @@
         <div class="foot"></div>
       </div>
     </div>
+    <script src="/javascripts/jquery-2.0.1.min.js"></script>
+    <script src="/javascripts/WS_history.js"></script>
   </body>
 </html>

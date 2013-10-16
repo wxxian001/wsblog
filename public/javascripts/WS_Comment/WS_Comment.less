@@ -1,0 +1,221 @@
+@rightWidth: 500px;
+@imgWidth: 48px;
+@imgHeight: 48px;
+@btnWidth: 60px;
+@btnHeight: 34px;
+
+.clearfix {
+  zoom: 1;
+  clear: both;
+  &:before, &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+.comment-title {
+
+}
+
+.comment-reply {
+  /*height:270px;*/
+  position: relative;
+  img {
+    width: @imgWidth;
+    height: @imgHeight;
+    border-radius: 3px;
+  }
+  .comment-reply-user {
+    /*position : relative;*/
+    float: left;
+    width: 50px;
+  }
+  .comment-reply-input {
+
+    /*float:left;*/
+    margin-left: @imgWidth+2;
+    /*width: @rightWidth;*/
+    /*box-shadow: inset 0 0 0 2px rgba(16, 48, 68, 0.2);*/
+    position: relative;
+    left: 2px;
+
+    .textarea {
+      background: rgb(255, 255, 255);
+      outline: 0px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      border-color: rgba(16, 48, 68, 0.2);
+      border-style: solid;
+      border-width: 2px;
+      span {
+        display: block;
+        margin-left: 5px;
+        margin-top:16px;
+        margin-bottom:16px;
+        color: rgb(170, 178, 184);
+      }
+      p{
+        padding-left: 5px;
+        margin-top:16px;
+        margin-bottom:16px;
+      }
+    }
+    .comment-reply-input-username {
+      outline: 0px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      border-color: rgba(16, 48, 68, 0.2);
+      border-style: solid;
+      border-width: 2px;
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      padding: 5px;
+      /*span {
+        display: block;
+        margin: 5px;
+        color: rgb(170, 178, 184);
+      }
+      p{
+        //padding-left: 5px;
+        margin:4px;
+      }*/
+    }
+    .comment-reply-input-mail {
+      outline: 0px;
+      margin-bottom: 5px;
+      border-radius: 3px;
+      border-color: rgba(16, 48, 68, 0.2);
+      border-style: solid;
+      border-width: 2px;
+      width: 200px;
+      height: 30px;
+      font-size: 16px;
+      padding: 5px;
+      /*span {
+        display: block;
+        margin: 5px;
+        color: rgb(170, 178, 184);
+      }
+      p{
+        //padding-left: 5px;
+        margin:4px;
+      }*/
+    }
+
+  }
+}
+
+.comments-history {
+  position: relative;
+  margin-bottom: 10px;
+  .comment-history-user {
+    position: relative;
+    float: left;
+    width: 50px;
+    img {
+      width: @imgWidth;
+      height: @imgHeight;
+      border-radius: 3px;
+    }
+  }
+  .comment-history-info {
+    position: relative;
+    left: 2px;
+    float: left;
+
+    /*width: @rightWidth;*/
+    .comment-history-head-user {
+      color: rgb(119, 119, 119);
+      line-height: 17px;
+      font-size: 13px;
+    }
+    .comment-history-head-dot {
+      font-weight: 500;
+      font-size: 95%;
+      color: rgba(30, 55, 70, 0.4);
+    }
+    .comment-history-head-time {
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 95%;
+      color: rgba(30, 55, 70, 0.4);
+    }
+  }
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.btn {
+  width: @btnWidth;
+  height: @btnHeight;
+  border: 0;
+  outline: 0px;
+  background: rgba(29, 47, 58, 0.6);
+  border-radius: 3px;
+  &:hover {
+    cursor: pointer;
+    background: rgba(29, 47, 58, 0.87);
+    color: rgba(255, 255, 255, 1);
+  }
+  &:active {
+    background: rgba(29, 47, 58, 0.6);
+    color: rgba(29, 47, 58, 0.87);
+  }
+}
+
+.icon-proceed {
+  font-family: embed-icons;
+  &:before {
+    content: "\2192";
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+@font-face {
+  font-family: embed-icons;
+  src: url(fonts/embed-icons.eot);
+  src: url(fonts/embed-icons.eot?#iefix) format('embedded-opentype'),
+        url(fonts/embed-icons.svg#embed-icons) format('svg'),
+        url(fonts/embed-icons.woff) format('woff'),
+        url(fonts/embed-icons.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+.alert{
+  background: rgb(255, 179, 100);
+  border-radius:3px;
+  height:40px;
+  margin-bottom:10px;
+  line-height: 40px;
+  color:#ffffff;
+  font-weight: bold;
+  padding:5px;
+  .close{
+    float:right;
+    &:hover{
+      cursor:pointer;
+      color: rgb(222, 223, 194)
+    }
+
+  }
+}
+
+.error{
+  background: rgb(255, 46, 70);
+}
+
+.disappear{
+  display:none;
+}

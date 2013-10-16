@@ -1,0 +1,20 @@
+.clearfix{zoom:1;clear:both}.clearfix:before,.clearfix:after{content:"";display:block;clear:both}
+.comment-reply{position:relative}.comment-reply img{width:48px;height:48px;border-radius:3px}
+.comment-reply .comment-reply-user{float:left;width:50px}
+.comment-reply .comment-reply-input{margin-left:50px;position:relative;left:2px}.comment-reply .comment-reply-input .textarea{background:#fff;outline:0;margin-bottom:5px;border-radius:3px;border-color:rgba(16,48,68,0.2);border-style:solid;border-width:2px}.comment-reply .comment-reply-input .textarea span{display:block;margin-left:5px;margin-top:16px;margin-bottom:16px;color:#aab2b8}
+.comment-reply .comment-reply-input .textarea p{padding-left:5px;margin-top:16px;margin-bottom:16px}
+.comment-reply .comment-reply-input .comment-reply-input-username{outline:0;margin-bottom:5px;border-radius:3px;border-color:rgba(16,48,68,0.2);border-style:solid;border-width:2px;width:200px;height:30px;font-size:16px;padding:5px;}
+.comment-reply .comment-reply-input .comment-reply-input-mail{outline:0;margin-bottom:5px;border-radius:3px;border-color:rgba(16,48,68,0.2);border-style:solid;border-width:2px;width:200px;height:30px;font-size:16px;padding:5px;}
+.comments-history{position:relative;margin-bottom:10px}.comments-history .comment-history-user{position:relative;float:left;width:50px}.comments-history .comment-history-user img{width:48px;height:48px;border-radius:3px}
+.comments-history .comment-history-info{position:relative;left:2px;float:left;}.comments-history .comment-history-info .comment-history-head-user{color:#777;line-height:17px;font-size:13px}
+.comments-history .comment-history-info .comment-history-head-dot{font-weight:500;font-size:95%;color:rgba(30,55,70,0.4)}
+.comments-history .comment-history-info .comment-history-head-time{text-decoration:none;font-weight:500;font-size:95%;color:rgba(30,55,70,0.4)}
+.float-left{float:left}
+.float-right{float:right}
+.btn{width:60px;height:34px;border:0;outline:0;background:rgba(29,47,58,0.6);border-radius:3px}.btn:hover{cursor:pointer;background:rgba(29,47,58,0.87);color:#fff}
+.btn:active{background:rgba(29,47,58,0.6);color:rgba(29,47,58,0.87)}
+.icon-proceed{font-family:embed-icons}.icon-proceed:before{content:"\2192"}
+.margin-bottom{margin-bottom:20px}
+@font-face{font-family:embed-icons;src:url(fonts/embed-icons.eot);src:url(fonts/embed-icons.eot?#iefix) format('embedded-opentype'),url(fonts/embed-icons.svg#embed-icons) format('svg'),url(fonts/embed-icons.woff) format('woff'),url(fonts/embed-icons.ttf) format('truetype');font-weight:400;font-style:normal}.alert{background:#ffb364;border-radius:3px;height:40px;margin-bottom:10px;line-height:40px;color:#fff;font-weight:bold;padding:5px}.alert .close{float:right}.alert .close:hover{cursor:pointer;color:#dedfc2}
+.error{background:#ff2e46}
+.disappear{display:none}

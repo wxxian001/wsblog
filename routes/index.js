@@ -10,7 +10,7 @@ exports.index = function(req, res){
             res.send("err");
         } else {
             console.log(collection);
-            res.render('index.html',collection);
+            res.render('index.ejs',collection);
         }
     });
     //origin data

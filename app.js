@@ -38,7 +38,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', routes.index);
 app.get('/detail', detail.get);
-app.get('/detailAjax', detial.getAjax);
+app.get('/detailAjax', detail.getAjax);
 app.get('/users', user.list);
 app.get('/article/get', article.get);
 app.post('/article/post', article.post);

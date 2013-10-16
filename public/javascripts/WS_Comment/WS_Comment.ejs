@@ -1,0 +1,55 @@
+
+<link rel="stylesheet" href="<%= path%>WS_Comment.css"/>
+<div id="comment" class="comment">
+    <div class="comment-title">
+        <h2><%= commentsHistory.length %>个评论</h2>
+    </div>
+    <div class="comment-reply clearfix margin-bottom">
+        <div id="comment-rely-error" class="alert error disappear">
+            <a class="close">×</a>
+            <span></span>
+        </div>
+        <div class="comment-reply-user">
+            <img src="<%= path%>img/user.png"><!--img/user.png -->
+        </div>
+        <div class="comment-reply-input">
+            <div id="comment-reply-input-text" class="textarea" contenteditable="true" tabindex="0"
+                 role="textbox" aria-multiline="true"
+                 style="overflow: auto; max-height: 350px;">
+                    <span>
+                        请留言...
+                    </span>
+            </div>
+            <div>
+                <input id="comment-reply-input-username" class="comment-reply-input-username"  type="text" placeholder="请输入姓名" />
+            </div>
+            <div>
+                <input id="comment-reply-input-mail" class="comment-reply-input-mail"  type="text" placeholder="请输入邮箱" />
+            </div>
+            <div class="proceed float-right">
+                <button id="comment-reply-submit" class="btn submit" ><span class="icon-proceed"></span></button>
+            </div>
+        </div>
+    </div>
+    <div id="comments-history" class="comments-history clearfix">
+        <% for(var i=0; i<commentsHistory.length; i++) {
+            var jsonObject = commentsHistory[i];
+        %>
+        <div class="comment-history clearfix">
+            <div class="comment-history-user">
+                <img src="<%= jsonObject.img%>">
+            </div>
+            <div class="comment-history-info">
+                <div class="comment-history-head">
+                    <span class="comment-history-head-user"><%= jsonObject.name%></span>
+                    <span class="comment-history-head-dot">• </span>
+                    <a class="comment-history-head-time" href="###"><%= jsonObject.time%></a>
+                </div>
+                <div class="comment-history-msg">
+                    <%= jsonObject.msg%>
+                </div>
+            </div>
+        </div>
+        <% }%>
+    </div>
+</div>

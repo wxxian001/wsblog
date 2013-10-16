@@ -17,7 +17,7 @@ exports.get = function(req, res){
             res.send("err");
         } else {
             console.log(collection);
-            res.render('detail.html',collection);
+            res.render('detail.ejs',collection);
         }
     });
 };

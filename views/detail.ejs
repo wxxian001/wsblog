@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8"/>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
@@ -18,18 +19,18 @@
           </nav>
           <div class="search">
             <input type="text" class="search-input" />
-            <a class="search-btn" href="###"></a>
+            <a href="###"></a>
           </div>
         </div>
       </div>
       <div class="wrap-container">
         <div class="container">
           <div class="col-main">
-            <div class="main-inner">
+            <div id="main-inner" class="main-inner">
               <% for(var i=0; i<articleviews.length; i++) {%>
               <article class="article-box">
                 <h2 class="articlehead">
-                  <a id="article<%= i %>" href="detail.html" onclick="return false;"><%= articleviews[i].articlehead %></a>
+                  <a href="###"><%= articleviews[i].articlehead %></a>
                 </h2>
                 <section class="articlecontent"><%= articleviews[i].articlecontent %></section>
                 <p>
@@ -99,7 +100,8 @@
         <div class="foot"></div>
       </div>
     </div>
-    <script src="/javascripts/jquery-2.0.1.min.js"></script>
-    <script src="/javascripts/WS_history.js"></script>
+
+    <script type="text/javascript" src="/javascripts/WS_Comment/ejs_production.js"></script>
+    <script type="text/javascript" src="/javascripts/WS_Comment/WS_Comment.js"></script>
   </body>
 </html>
