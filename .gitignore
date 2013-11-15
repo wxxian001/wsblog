@@ -1,1 +1,4 @@
 .idea
+public/build
+public/node_modules
+public/test_git_ignore
